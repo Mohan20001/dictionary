@@ -24,14 +24,15 @@ body {
 
 body .container {
   min-width: 250px;
-  width: 90vw;
+  width: 60vw;
   background: cornsilk;
   height: 400px;
   padding: 1rem;
 }
 
 body .container .search-bar {
-  min-width: 100%;
+  width: 100%;
+  max-width: 400px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 60px auto;
@@ -39,12 +40,6 @@ body .container .search-bar {
   -webkit-box-shadow: 2px 2px 10px #cfc8c8;
           box-shadow: 2px 2px 10px #cfc8c8;
   margin: auto;
-}
-
-@media (min-width: 999px) {
-  body .container .search-bar {
-    max-width: 400px;
-  }
 }
 
 body .container .search-bar button {
