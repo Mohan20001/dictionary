@@ -15,11 +15,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width:880px) {
+        align-items: flex-start;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
     .container{
         min-width: 300px;
         width: 60vw;
         background:#eee;
-        height: 400px;
+        height: auto;
         padding: 1rem;
         display: grid;
         grid-template-rows: 66px auto;
@@ -45,12 +50,41 @@ body{
         }
         .content-of-word{
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns:1fr 1fr;
             margin-top: 1rem;
             grid-gap:1em;
             color: black;
+            @media (max-width:966px) {
+                grid-template-columns: 1fr;
+            }
             div{
               background: rgb(255, 255, 255);
+            }
+            .section-a,.section-b{
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                padding:1.1rem;
+                grid-gap: 1rem;
+                .word{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 1rem;
+                    font-size: 1rem;
+                    text-transform: capitalize;
+                    .left{
+                    //    background: red;
+                       align-self: center;
+                    }
+                    .right{
+                        // background: red;
+                        justify-self: end;
+                        align-self: center;
+                    }
+                }
+                .meaning{
+                    // background: rgb(30, 236, 11);
+                    opacity: 0.8;
+                }
             }
         }
     }
