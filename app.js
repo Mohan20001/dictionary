@@ -4,6 +4,7 @@ var h=document.getElementById('w');
 let speaker=document.getElementById('speaker');
 let mean=document.getElementById('meaning');
 let pron=document.getElementById('pron');
+let ad=document.getElementById('ad');
 
 speaker.addEventListener('click',()=>{
     ad.play();
@@ -18,10 +19,14 @@ btn.addEventListener('click',()=>{
 function getDATA(word="mocking") {
     url=`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     fetch(url).then(data => data.json()).then(Response=>{
-        alert(Response[0].meanings[0].definitions[0].definition);
+        // alert(Response[0].meanings[0].definitions[0].definition);
         h.innerText=Response[0].word;
+        pron.innerText=Response[0].phonetic;
+        ad.src=Response[0].phonetics[0].audio;
+        // console.log(Response[0].phonetics[0].audio);
         console.log(Response);
         mean.innerHTML=Response[0].meanings[0].definitions[0].definition;
+
     });
 }
 ///comment added
