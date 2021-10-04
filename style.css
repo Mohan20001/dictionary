@@ -94,8 +94,8 @@ body .container .content-of-word div {
 body .container .content-of-word .section-a, body .container .content-of-word .section-b {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 80px auto;
+      grid-template-rows: 80px auto;
   padding: 1.1rem;
   grid-gap: 1rem;
 }
