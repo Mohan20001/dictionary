@@ -10,7 +10,7 @@ body{
     font-size: 18px;
     height: 100vh;
     width: 100%;
-    background: blue;
+    background:#572d54;
     color: rgb(241, 241, 248);
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@ body{
                   button{
                 padding:$pad;
                 color: rgb(224, 224, 252);
-                background: rgb(152, 152, 253);
+                background:#572d54;
                 outline: none;
                 border: 1px;
             }
