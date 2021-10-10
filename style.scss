@@ -28,6 +28,9 @@ body{
         padding: 1rem;
         display: grid;
         grid-template-rows: 66px auto;
+        @media (max-width:670px) {
+            width: 88vw;
+        }
         .search-bar{
             width: 100%;
             max-width: 400px;

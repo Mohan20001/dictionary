@@ -19,6 +19,7 @@ btn.addEventListener('click',()=>{
 function getDATA(word="mocking") {
     url=`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     fetch(url).then(data => data.json()).then(Response=>{
+        console.log(Response);
         // alert(Response[0].meanings[0].definitions[0].definition);
         h.innerText=Response[0].word;
         pron.innerText=Response[0].phonetic;
@@ -30,3 +31,11 @@ function getDATA(word="mocking") {
     });
 }
 ///comment added
+
+async function getPhoto() {
+    let data=await fetch('https://api.unsplash.com/users/samuelzeller/photos');
+    let res=await data.json();
+    console.log(res);
+}
+
+getPhoto();

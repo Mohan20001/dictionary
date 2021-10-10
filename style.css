@@ -44,6 +44,12 @@ body .container {
       grid-template-rows: 66px auto;
 }
 
+@media (max-width: 670px) {
+  body .container {
+    width: 88vw;
+  }
+}
+
 body .container .search-bar {
   width: 100%;
   max-width: 400px;
