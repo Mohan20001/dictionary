@@ -137,4 +137,16 @@ body .container .content-of-word .section-a .meaning, body .container .content-o
 audio {
   display: none;
 }
+
+.section-b {
+  position: relative;
+  height: 270px;
+}
+
+.section-b img {
+  width: 100%;
+  height: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */
