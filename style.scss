@@ -8,7 +8,8 @@ $pad:1rem;
 
 body{
     font-size: 18px;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     width: 100%;
     background:#572d54;
     color: rgb(241, 241, 248);
@@ -24,7 +25,6 @@ body{
         min-width: 300px;
         width: 60vw;
         background:#eee;
-        height: auto;
         padding: 1rem;
         display: grid;
         grid-template-rows: 66px auto;

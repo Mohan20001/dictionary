@@ -7,7 +7,8 @@
 
 body {
   font-size: 18px;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100%;
   background: #572d54;
   color: #f1f1f8;
@@ -26,7 +27,6 @@ body .container {
   min-width: 300px;
   width: 60vw;
   background: #eee;
-  height: auto;
   padding: 1rem;
   display: -ms-grid;
   display: grid;
