@@ -173,8 +173,11 @@ ul {
 @media (max-width: 999px) {
   ul {
     margin: 1rem auto;
-    text-align: center;
     width: 238px;
   }
+}
+
+.hs {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
