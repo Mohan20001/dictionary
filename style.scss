@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 *{
     margin:0px;
     padding: 0;
@@ -7,6 +9,7 @@
 $pad:1rem;
 
 body{
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     height: 100%;
     min-height: 100vh;
