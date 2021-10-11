@@ -8,6 +8,7 @@ let ad=document.getElementById('ad');
 let pic=document.getElementById('pic');
 let list=document.getElementById('list');
 let syno=document.getElementById('syno');
+let history=document.getElementById('history');
 
 
 speaker.addEventListener('click',()=>{
@@ -32,6 +33,7 @@ function getDATA(word="mocking") {
         // console.log(Response[0].phonetics[0].audio);
         console.log(Response);
         mean.innerHTML=Response[0].meanings[0].definitions[0].definition;
+        history.innerHTML=Response[0].origin;
         examplesOfWord(list, 1, Response[0].meanings[0].definitions[0].example);
         examplesOfWord(syno, 4, Response[0].meanings[0].definitions[0].synonyms);
     });

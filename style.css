@@ -180,4 +180,14 @@ ul {
 .hs {
   margin-top: 1rem;
 }
+
+#history {
+  background: #f1eaf1;
+  padding: 0.5rem;
+  font-weight: 900;
+}
+
+p::first-letter, ol li::first-letter, ul li::first-letter {
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
